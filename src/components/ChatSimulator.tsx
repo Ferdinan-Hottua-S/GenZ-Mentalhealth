@@ -273,7 +273,7 @@ export default function ChatSimulator({
       </div>
 
       {/* 3. Action Panel: Offers Choices or Navigation */}
-      <div className={`p-4 shrink-0 transition-all duration-300 ${currentNode.choices && currentNode.choices.length > 0 ? 'bg-white text-black border-t-4 border-black' : 'bg-[#0D0D10] border-t border-white/10'}`}>
+      <div className={`p-4 shrink-0 max-h-[55%] sm:max-h-none overflow-y-auto transition-all duration-300 ${currentNode.choices && currentNode.choices.length > 0 ? 'bg-white text-black border-t-4 border-black' : 'bg-[#0D0D10] border-t border-white/10'}`}>
         {isTyping ? (
           <div className="text-center p-2 text-gray-400 text-xs font-mono uppercase tracking-widest">
             Sedang mendengarkan kemarahan kelompok... 🤐
