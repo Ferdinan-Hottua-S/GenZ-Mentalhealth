@@ -19,6 +19,7 @@ import TaskDesk from './components/TaskDesk';
 import GameIntro from './components/GameIntro';
 import GameOutro from './components/GameOutro';
 import MentalHealthTips from './components/MentalHealthTips';
+import SoundtrackPlayer from './components/SoundtrackPlayer';
 
 export default function App() {
   // Game states
@@ -162,6 +163,9 @@ export default function App() {
 
       {/* 2. Main Content Playground Area */}
       <main className="flex-1 max-w-4xl mx-auto w-full px-4 sm:px-6 py-4.5 z-10 flex flex-col gap-5 items-center justify-center">
+        {/* Global ambient procedural lo-fi soundtrack */}
+        <SoundtrackPlayer />
+
         {gameState === 'intro' && (
           <GameIntro onStartGame={() => setGameState('dialogue')} />
         )}
