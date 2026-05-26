@@ -345,6 +345,12 @@ export const DIALOGUE_TREE: Record<string, DialogNode> = {
     text: 'Cheryl... aku tahu banget kok usaha kamu semalam. Keren banget postermu itu sebenernya. Tolong jangan dengerin mulut beracun mereka sampai masuk ke relung hati ya. Malam ini, istirahatlah yang cukup, yuk kita cicil tugas OSIS bareng-bareng besok biar lebih enteng.',
     nextId: 'day2_desk_prepare',
   },
+  day2_desk_prepare: {
+    id: 'day2_desk_prepare',
+    speakerId: 'narator',
+    text: 'Sore harinya di rumah, setelah disingkirkan oleh rapat evaluasi yang menyudutkan, Cheryl kembali terduduk di meja belajarnya. Dengan dorongan semangat dari Alika, Cheryl bersiap menuangkan emosinya ke dalam revisi dan melatih asertivitas dirinya.',
+    nextId: 'GOTO_DESK',
+  },
 
   // === DAY 3 ===
   day3_intro: {
